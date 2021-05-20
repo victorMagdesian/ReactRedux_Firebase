@@ -8,7 +8,8 @@ class SignUp extends Component {
         lastName:''
     }
     handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
+
         console.log(this.state)
 
     }
@@ -53,4 +54,5 @@ class SignUp extends Component {
     }
 }
 
-export default SignUp;
+export default SignUp
+

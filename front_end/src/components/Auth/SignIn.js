@@ -6,7 +6,7 @@ class SignIn extends Component {
         password:''
     }
     handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         console.log(this.state)
 
     }

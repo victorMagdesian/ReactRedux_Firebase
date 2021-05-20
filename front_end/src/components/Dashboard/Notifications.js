@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Notiifications = () => {
     
@@ -6,9 +6,9 @@ const Notiifications = () => {
             <div>
                 <p className="white-text">Notifications</p>
             </div>
-        );
+        )
     
 
 }
 
-export default Notiifications;
+export default Notiifications

@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const SignedInLinks = () => {
     
@@ -9,8 +9,8 @@ const SignedInLinks = () => {
                 <li><NavLink  to='/'>Log Out</NavLink></li>
                 <li><NavLink to='/' className="btn btn-floating black">NN</NavLink></li>
             </ul>
-        );
+        )
 
     
 }
-export default SignedInLinks;
+export default SignedInLinks
