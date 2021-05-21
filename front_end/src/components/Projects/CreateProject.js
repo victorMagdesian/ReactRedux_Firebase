@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { createProject } from '../../store/actions/projectActions'
 
 class CreateProject extends Component {
     state = {
         title: '',
-        content:''
+        content: ''
     }
     handleSubmit = (e) => {
         e.preventDefault()
-        console.log(this.state)
-
+        //console.log(this.state)
+        this.props.createProject(this.state)
     }
 
     handleChange = (e) => {
@@ -24,7 +26,7 @@ class CreateProject extends Component {
                     <div className="input-field">
                         <label htmlFor="title">Title</label>
                         <input type="text" id="title" onChange={this.handleChange} />
-                        
+
                     </div>
                     <div className="input-field">
                         <label htmlFor="content">Project Content</label>
@@ -38,5 +40,10 @@ class CreateProject extends Component {
         )
     }
 }
+const mapDispatchToProps = (dispatch) => {
+    return {
+        createProject: (project) => dispatch(createProject(project))
+    }
+}
 
-export default CreateProject
+export default connect(null, mapDispatchToProps)(CreateProject)
